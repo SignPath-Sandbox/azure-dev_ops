@@ -22,7 +22,7 @@ steps:
     serviceConnectionName: 'test-qa'
     projectSlug: 'AzureDevOps'
     signingPolicySlug: 'test-signing'
-    azureDevOpsArtifactName: 'unsigned-artifact1'
+    azureDevOpsArtifactName: 'unsigned-artifact'
     outputArtifactDirectory: './output'
     waitForCompletion: false
     
