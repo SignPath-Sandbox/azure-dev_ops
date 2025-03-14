@@ -11,12 +11,10 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: curl -o sample.dll https://github.com/carterjones/hello-world-dll/releases/download/v1.0.0/hello-world-x64.dll
-  displayName: 'Run a one-line script'
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: './sample.dll' # string. Required. Path to publish. Default: $(Build.ArtifactStagingDirectory).
+    PathtoPublish: './test.ps1' # string. Required. Path to publish. Default: $(Build.ArtifactStagingDirectory).
     ArtifactName: 'unsigned-artifact'
 
 - task: SubmitSigningRequest@1
