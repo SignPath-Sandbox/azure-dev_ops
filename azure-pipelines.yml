@@ -19,10 +19,10 @@ steps:
 
 - task: SubmitSigningRequest@1
   inputs:
-    serviceConnectionName: 'test-qa1'
+    serviceConnectionName: 'test-qa'
     projectSlug: 'AzureDevOps'
     signingPolicySlug: 'test-signing'
-    azureDevOpsArtifactName: 'unsigned-artifact'
+    azureDevOpsArtifactName: 'unsigned-artifact1'
     outputArtifactDirectory: './output'
     waitForCompletion: false
     
