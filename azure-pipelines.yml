@@ -25,6 +25,9 @@ steps:
     azureDevOpsArtifactName: 'unsigned-artifact'
     outputArtifactDirectory: './output'
     waitForCompletion: false
+    waitForCompletionTimeoutInSeconds: '250'
+    downloadSignedArtifactTimeoutInSeconds: '100'
+    serviceUnavailableTimeoutInSeconds: '20'
     
 - script: |
     echo Add other tasks to build, test, and deploy your project.
