@@ -20,7 +20,7 @@ steps:
 
 - task: SubmitSigningRequest@4
   inputs:
-    serviceConnectionName: 'test-qa'
+    serviceConnectionName: 'PipelineConnectorADO'
     projectSlug: 'AzureDevOps'
     signingPolicySlug: 'test-signing'
     azureDevOpsArtifactName: 'unsigned-artifact'
